@@ -1,0 +1,9 @@
+---
+- name: TASKS | RESOLV_CONF | Writing resolv.conf file
+  template:
+    src: resolv_conf.j2
+    dest: /etc/resolv.conf
+    owner: root
+    group: root
+    mode: "0644"
+    backup: true

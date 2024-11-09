@@ -1,0 +1,4 @@
+---
+- name: TASKS | MAIN | Perform task when resolvers_mode is resolv_conf
+  include_tasks: resolv_conf.yml
+  when: vh.resolvers_mode == 'resolv_conf'
